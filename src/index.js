@@ -26,7 +26,8 @@ function replaceContent(regex, replacement, paths) {
     regex,
     replacement,
     paths,
-    ...replaceOptions,
+    recursive: true,
+    silent: true,
   });
 
   for (const filePath of paths) {
